@@ -15,9 +15,18 @@ A Python script to plot any number of places on a terrain map, by using latitude
 - Automatically adjusts map extent (local or global view)
 - Caches geocoding results for faster repeated runs
 
+![alexander example](data/pin-dot-20260425-182036.png)
+
 ## How to use
 
-Internet is needed. Large datasets take a bit of time to render. Geocoding is through the Nominatim service of OpenStreetMap, which is rate-limited.
+### Know before you begin
+
+- Internet connectivity is essential. 
+- Large datasets take a bit of time to render. 
+- Geocoding is through the Nominatim service of OpenStreetMap, which is rate-limited.
+- Python is needed; knowledge of Python isn't.
+
+### Steps
 
 1.  Create a `.csv` file that contains the following four columns: `place_name`, `place_country`, `lat`, `lon`. Enter the place details in this file. An example file is at [example CSV file](data/example_country.csv). The values for `lat` and `lon` are optional; if absent, the script geocodes the location.
     ```
